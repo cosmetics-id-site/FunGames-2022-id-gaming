@@ -8453,6 +8453,7 @@ div.nk-error {
     -webkit-transition: opacity .15s ease-in-out;
     -o-transition: opacity .15s ease-in-out;
     transition: opacity .15s ease-in-out;
+    pointer-events: none
 }
 
 .nk-product-cat .nk-product-image:hover,
@@ -8554,7 +8555,7 @@ div.nk-error {
 
 .nk-product-price {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1;
     color: #fff;
