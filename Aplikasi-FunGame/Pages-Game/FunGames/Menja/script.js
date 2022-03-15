@@ -1,19 +1,19 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyAFNqGjp3qmsAKbt98GmL7C9-UNMXBwVJ8",
-    authDomain: "stack-image-data.firebaseapp.com",
-    databaseURL: "https://stack-image-data-default-rtdb.firebaseio.com",
-    projectId: "stack-image-data",
-    storageBucket: "stack-image-data.appspot.com",
-    messagingSenderId: "903855575857",
-    appId: "1:903855575857:web:ded2db5716e04c5482d610",
-    measurementId: "G-S3C207VCCX"
+  apiKey: "AIzaSyCJNDQIUDFQCKRO8ANsNBWXT8E96rFhlCk",
+  authDomain: "fungames-id.firebaseapp.com",
+  databaseURL: "https://fungames-id-default-rtdb.firebaseio.com",
+  projectId: "fungames-id",
+  storageBucket: "fungames-id.appspot.com",
+  messagingSenderId: "366901940298",
+  appId: "1:366901940298:web:c0e97390c366f59a3916b3",
+  measurementId: "G-6Y8BF9HFZ4"
      };
      firebase.initializeApp(firebaseConfig);
      
      const hitCounter = document.getElementById("hit-counter");
      hitCounter.style.display = "none";
      
-     const db = firebase.database().ref("View Design-Bca-Mobile");
+     const db = firebase.database().ref("View Game Menja (Balok Ninja)");
      db.on("value", (snapshot) => {
        hitCounter.textContent = snapshot.val();  
      });
@@ -81,42 +81,3 @@ var swiper = new Swiper( '.swiper-container.two', {
 			slideShadows : false,
 		}
 } );
-
-var timeleft = 20;
-const downloadButton = document.querySelector(".down-btn");
-const countdown = document.querySelector(".countdown")
-const waitText = document.querySelector(".waiting-text")
-const downloadText = document.querySelector(".download-text")
-const downloadLink = document.querySelector(".download-link")
-
-downloadButton.addEventListener("click", () => {
-    downloadButton.style.display = "none";
-    countdown.innerHTML = "Download will begin automatically in <span>" + timeleft + " </span> seconds."; // For Fast Start
-
-    var downloadtimer = setInterval(function timecount() {
-        timeleft -= 1;
-        countdown.innerHTML = "Download will begin automatically in <span>" + timeleft + " </span> seconds.";
-        if (timeleft <= 0) {
-            clearInterval(downloadtimer);
-            waitText.style.display = "block";
-            let download_href = "Design BCA Mobile - Stack Image.rar";
-            window.location.href = download_href;
-            downloadLink.href = download_href;
-
-            setTimeout(() => {
-                waitText.style.display = "none";
-                downloadText.style.display = "block";
-            }, 4000);
-        }
-    }, 1000);
-});
-
-function clicked() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.countapi.xyz/hit/Design-Bca-Mobile/awesomeclick");
-    xhr.responseType = "json";
-    xhr.onload = function() {
-        alert(`This button has been clicked ${this.response.value} times!`);
-    }
-    xhr.send();
-}
