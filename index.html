@@ -846,16 +846,16 @@
                     </button>
 
                     <h4 class="mb-0"><span class="text-main-1">Sign</span> In</h4>
-
+                    <div class="message-wrapper" id="messageDiv">
+                        <h6 class="message" style="text-align: center;"></h6></div>
                     <div class="nk-gap-1"></div>
-                    <form action="#" class="nk-form text-white">
+                    <form id="loginForm" class="nk-form text-white">
                         <div class="row vertical-gap">
                             <div class="col-md-6">
                                 Use email and password:
 
                                 <div class="nk-gap"></div>
                                 <input type="email" value="" name="email" class=" form-control" placeholder="Email">
-
                                 <div class="nk-gap"></div>
                                 <input type="password" value="" name="password" class="required form-control"
                                     placeholder="Password">
@@ -864,7 +864,7 @@
                                 Or social account:
                                 <div class="nk-gap"></div>
                                 <ul class="nk-social-links-2">
-                                    <li><a class="nk-social-google" href="#"><span class="fab fa-google"></span></a></li>
+                                    <li><a class="nk-social-google login"><span class="fab fa-google" style="color: black;"></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -872,7 +872,7 @@
                         <div class="nk-gap-1"></div>
                         <div class="row vertical-gap">
                             <div class="col-md-6">
-                                <a href="#" class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block">Sign In</a>
+                                <button class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block" type="submit">Sign In</button>
                             </div>
                             <div class="col-md-6">
                                 <div class="mnt-5">
@@ -890,7 +890,7 @@
     </div>
     <!-- END: Login Modal -->
 
-    <!-- START: Login Modal -->
+    <!-- START: Register Modal -->
     <div class="nk-modal modal fade" id="modalregister" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
@@ -902,14 +902,15 @@
                     <h4 class="mb-0"><span class="text-main-1">Sign</span> Up</h4>
 
                     <div class="nk-gap-1"></div>
-                    <form action="#" class="nk-form text-white">
+                    <div class="message-wrapper" id="messageDiv">
+                        <h6 class="message" style="text-align: center;"></h6></div>
+                    <form id="registerForm" class="nk-form text-white">
                         <div class="row vertical-gap">
                             <div class="col-md-6">
                                 Use email and password:
 
                                 <div class="nk-gap"></div>
                                 <input type="email" value="" name="email" class=" form-control" placeholder="Email">
-
                                 <div class="nk-gap"></div>
                                 <input type="password" value="" name="password" class="required form-control"
                                     placeholder="Password">
@@ -920,12 +921,7 @@
                                 <div class="nk-gap"></div>
 
                                 <ul class="nk-social-links-2">
-                                    <li><a class="nk-social-facebook" href="#"><span class="fab fa-facebook"></span></a>
-                                    </li>
-                                    <li><a class="nk-social-google-plus" href="#"><span
-                                                class="fab fa-google-plus"></span></a></li>
-                                    <li><a class="nk-social-twitter" href="#"><span class="fab fa-twitter"></span></a>
-                                    </li>
+                                    <li><a class="nk-social-google login"><span class="fab fa-google" style="color: black;"></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -933,11 +929,11 @@
                         <div class="nk-gap-1"></div>
                         <div class="row vertical-gap">
                             <div class="col-md-6">
-                                <a href="#" class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block">Sign In</a>
+                                <button class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block" type="submit">Sign Up</button>
                             </div>
                             <div class="col-md-6">
                                 <div class="mnt-5">
-                                    <small><a href="#">Forgot your password?</a></small>
+                                    <small><a href="#" data-toggle="modal" data-dismiss="modal" aria-label="Close" data-target="#modalResetPassword">Forgot your password?</a></small>
                                 </div>
                                 <div class="mnt-5">
                                     <small><a href="#" data-toggle="modal" data-dismiss="modal" aria-label="Close" data-target="#modalLogin">Not a member? Sign up</a></small>
@@ -949,8 +945,11 @@
             </div>
         </div>
     </div>
-    <!-- END: Login Modal -->
+    <!-- END: Register Modal -->
 
+    <!-- Javascript file -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
     <!-- Object Fit Polyfill -->
     <script src="assets/vendor/object-fit-images/dist/ofi.min.js"></script>
     <!-- GSAP -->
@@ -993,6 +992,7 @@
     <!-- FunGames -->
     <script src="assets/js/fungames.min.js"></script>
     <script src="assets/js/fungames-init.js"></script>
+    <script src="Login/login-2.js"></script>
     <!-- END: Scripts -->
 
 </body>
