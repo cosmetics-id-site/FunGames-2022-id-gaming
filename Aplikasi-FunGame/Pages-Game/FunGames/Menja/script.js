@@ -1,12 +1,12 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCJNDQIUDFQCKRO8ANsNBWXT8E96rFhlCk",
-  authDomain: "fungames-id.firebaseapp.com",
-  databaseURL: "https://fungames-id-default-rtdb.firebaseio.com",
-  projectId: "fungames-id",
-  storageBucket: "fungames-id.appspot.com",
-  messagingSenderId: "366901940298",
-  appId: "1:366901940298:web:c0e97390c366f59a3916b3",
-  measurementId: "G-6Y8BF9HFZ4"
+  apiKey: "AIzaSyCSdoYwAd5IHNPXO1a5OCSiYWpORLUzyPI",
+  authDomain: "fungamesid.firebaseapp.com",
+  databaseURL: "https://fungamesid-default-rtdb.firebaseio.com",
+  projectId: "fungamesid",
+  storageBucket: "fungamesid.appspot.com",
+  messagingSenderId: "288362351127",
+  appId: "1:288362351127:web:1def18b6d7e9695d982a52",
+  measurementId: "G-HGSY5WTSGZ"
      };
      firebase.initializeApp(firebaseConfig);
      

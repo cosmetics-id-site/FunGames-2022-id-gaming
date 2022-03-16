@@ -1,18 +1,18 @@
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
-  apiKey: "AIzaSyD-6ozxK1aa1inCYAcV0ndWElZQHPRGhAg",
-  authDomain: "stack-image-report.firebaseapp.com",
-  databaseURL: "https://stack-image-report-default-rtdb.firebaseio.com",
-  projectId: "stack-image-report",
-  storageBucket: "stack-image-report.appspot.com",
-  messagingSenderId: "710557888173",
-  appId: "1:710557888173:web:3bebb64962c06e13df6024",
-  measurementId: "G-QYNBYV56JC",
+  apiKey: "AIzaSyCSdoYwAd5IHNPXO1a5OCSiYWpORLUzyPI",
+  authDomain: "fungamesid.firebaseapp.com",
+  databaseURL: "https://fungamesid-default-rtdb.firebaseio.com",
+  projectId: "fungamesid",
+  storageBucket: "fungamesid.appspot.com",
+  messagingSenderId: "288362351127",
+  appId: "1:288362351127:web:1def18b6d7e9695d982a52",
+  measurementId: "G-HGSY5WTSGZ",
 };
 firebase.initializeApp(config);
 
 // Reference messages collection
-var messagesRef = firebase.database().ref('Report Design-Bca-Mobile');
+var messagesRef = firebase.database().ref('Report Game Menja');
 
 function reset() {
   document.getElementById("contactForm").reset();

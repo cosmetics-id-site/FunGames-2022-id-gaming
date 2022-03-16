@@ -9753,3 +9753,37 @@ div.nk-error {
     opacity: 1;
     z-index: 1;
 }
+
+
+/*---------------------------
+  App Banner
+ ----------------------------*/
+.app-banner {
+    display: flex;
+    background-color: #FDCE22;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .app-banner .close {
+    cursor: pointer;
+  }
+  .app-banner .content {
+    flex-grow: 1;
+    padding: 0 2rem;
+  }
+  .app-banner .content .title {
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+  }
+  .app-banner .install button {
+    display: inline-block;
+    width: auto;
+    background: #333;
+    border: none;
+    border-radius: 10px;
+    padding: 0.15rem 1.25rem;
+    color: #FDCE22;
+    cursor: pointer;
+  }
