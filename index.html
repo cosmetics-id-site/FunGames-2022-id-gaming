@@ -676,25 +676,27 @@
                         <div class="nk-widget">
                             <h4 class="nk-widget-title"><span class="text-main-1">Contact</span> With Us</h4>
                             <div class="nk-widget-content">
-                                <form action="php/ajax-contact-form.php" class="nk-form nk-form-ajax">
+                                <form id="contactForm" class="nk-form nk-form-ajax">
                                     <div class="row vertical-gap sm-gap">
                                         <div class="col-md-6">
-                                            <input type="email" class="form-control required" name="email"
+                                            <input type="email" class="form-control" id="email" name="email"
                                                 placeholder="Email *">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" class="form-control required" name="name"
+                                            <input type="text" class="form-control" id="name" name="name"
                                                 placeholder="Name *">
                                         </div>
                                     </div>
                                     <div class="nk-gap"></div>
-                                    <textarea class="form-control required" name="message" rows="5"
+                                    <textarea class="form-control" id="message" name="message" rows="5"
                                         placeholder="Message *"></textarea>
                                     <div class="nk-gap-1"></div>
                                     <button class="nk-btn nk-btn-rounded nk-btn-color-white">
                                         <span>Send</span>
                                         <span class="icon"><i class="ion-paper-airplane"></i></span>
                                     </button>
+                                    <br><br>
+                                    <div class="alert">Terima Kasih, Kami Segera Periksa Game Ini</div>
                                     <div class="nk-form-response-success"></div>
                                     <div class="nk-form-response-error"></div>
                                 </form>
@@ -707,6 +709,7 @@
                             <div class="nk-widget-content">
                                 <div class="row vertical-gap sm-gap">
 
+                                    <!--Post--
                                     <div class="col-lg-6">
                                         <div class="nk-widget-post-2">
                                             <a href="blog-article.html" class="nk-post-image">
@@ -734,6 +737,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Post-->
 
                                 </div>
                             </div>
@@ -953,6 +957,8 @@
     <!-- Javascript file -->
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="assets/js/data-contact-footer.js"></script>
     <!-- Object Fit Polyfill -->
     <script src="assets/vendor/object-fit-images/dist/ofi.min.js"></script>
     <!-- GSAP -->

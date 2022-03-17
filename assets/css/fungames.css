@@ -9755,6 +9755,15 @@ div.nk-error {
 }
 
 
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+  }
+  
 /*---------------------------
   App Banner
  ----------------------------*/
@@ -9786,4 +9795,4 @@ div.nk-error {
     padding: 0.15rem 1.25rem;
     color: #FDCE22;
     cursor: pointer;
-  }
+  }'
