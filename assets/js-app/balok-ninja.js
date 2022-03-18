@@ -5,7 +5,7 @@ function getParentUrl() {
             : document.location.href
         : document.location.href;
     if (document.referrer.indexOf('https://fungames.vercel.app/') !== -1) {
-        url = 'https://fungames.vercel.app/';
+        url = 'https://www.swing2app.com/';
     }
     return url;
 }
