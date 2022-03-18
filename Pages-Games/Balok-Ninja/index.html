@@ -291,7 +291,7 @@
                                 </div>
                             </blockquote>
 
-                            <a href="#"
+                            <a href="#" data-toggle="modal" data-target="#modalComingSoon"
                                 class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-hover-color-main-1">Play On App
                                 FunGames</a>
                             <br><br>
@@ -323,14 +323,14 @@
                         </div>
                         <!-- END: Post Text -->
 
-                        <!-- START: Similar Articles -->
+                        <!-- START: Similar Articles --
                         <div class="nk-gap-2"></div>
                         <h3 class="nk-decorated-h-2"><span><span class="text-main-1">Similar</span> Articles</span></h3>
                         <div class="nk-gap"></div>
                         <div class="row">
 
                             <div class="col-md-6">
-                                <!-- START: Post -->
+                                <!-- START: Post --
                                 <div class="nk-blog-post">
                                     <a href="blog-article.html" class="nk-post-img">
                                         <img src="assets/images/post-3-mid.jpg"
@@ -346,11 +346,11 @@
                                     <h2 class="nk-post-title h4"><a href="blog-article.html">We found a witch! May we
                                             burn her?</a></h2>
                                 </div>
-                                <!-- END: Post -->
+                                <!-- END: Post --
                             </div>
 
                             <div class="col-md-6">
-                                <!-- START: Post -->
+                                <!-- START: Post --
                                 <div class="nk-blog-post">
                                     <a href="blog-article.html" class="nk-post-img">
                                         <img src="assets/images/post-4-mid.jpg"
@@ -366,7 +366,7 @@
                                     <h2 class="nk-post-title h4"><a href="blog-article.html">For good, too though, in
                                             consequence</a></h2>
                                 </div>
-                                <!-- END: Post -->
+                                <!-- END: Post --
                             </div>
 
                         </div>
@@ -404,7 +404,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <!--We Are Social-->
+                        <!--We Are Social--
                         <div class="nk-widget nk-widget-highlighted">
                             <h4 class="nk-widget-title"><span><span class="text-main-1">Latest</span> Video</span></h4>
                             <div class="nk-widget-content">
@@ -663,25 +663,27 @@
                         <div class="nk-widget">
                             <h4 class="nk-widget-title"><span class="text-main-1">Contact</span> With Us</h4>
                             <div class="nk-widget-content">
-                                <form action="php/ajax-contact-form.php" class="nk-form nk-form-ajax">
+                                <form id="contactForm" class="nk-form nk-form-ajax">
                                     <div class="row vertical-gap sm-gap">
                                         <div class="col-md-6">
-                                            <input type="email" class="form-control required" name="email"
+                                            <input type="email" class="form-control" id="email" name="email"
                                                 placeholder="Email *">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" class="form-control required" name="name"
+                                            <input type="text" class="form-control" id="name" name="name"
                                                 placeholder="Name *">
                                         </div>
                                     </div>
                                     <div class="nk-gap"></div>
-                                    <textarea class="form-control required" name="message" rows="5"
+                                    <textarea class="form-control" id="message" name="message" rows="5"
                                         placeholder="Message *"></textarea>
                                     <div class="nk-gap-1"></div>
                                     <button class="nk-btn nk-btn-rounded nk-btn-color-white">
                                         <span>Send</span>
                                         <span class="icon"><i class="ion-paper-airplane"></i></span>
                                     </button>
+                                    <br><br>
+                                    <div class="alert">Terima Kasih, Kami Segera Periksa Game Ini</div>
                                     <div class="nk-form-response-success"></div>
                                     <div class="nk-form-response-error"></div>
                                 </form>
@@ -694,6 +696,7 @@
                             <div class="nk-widget-content">
                                 <div class="row vertical-gap sm-gap">
 
+                                    <!--Post--
                                     <div class="col-lg-6">
                                         <div class="nk-widget-post-2">
                                             <a href="blog-article.html" class="nk-post-image">
@@ -721,16 +724,19 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Post-->
 
                                 </div>
                             </div>
                         </div>
                         <div class="nk-widget">
-                            <h4 class="nk-widget-title"><span class="text-main-1">In</span> Twitter</h4>
+                            <h4 class="nk-widget-title"><span class="text-main-1"></span>Help</h4>
                             <div class="nk-widget-content">
-                                <div class="nk-twitter-list" data-twitter-count="1"></div>
+                                <span class="nk-post-title"><a href="m/Offline/">Faq</a></span><br>
+                                <span class="nk-post-title"><a href="m/Offline/">Support</a></span>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="nk-gap-3"></div>
@@ -849,11 +855,38 @@
     </div>
     <!-- END: Login Modal -->
 
+    <!-- START: Coming Soon Modal -->
+    <div class="nk-modal modal fade" id="modalComingSoon" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="ion-android-close"></span>
+                    </button>
 
+                    <h4 class="mb-0"><span class="text-main-1">Alert</span></h4>
+
+                    <div class="nk-gap-1"></div>
+                    <div class="message-wrapper" id="messageDiv">
+                        <h6 class="message" style="text-align: center;"></h6>
+                    </div>
+                    <span>Start Game On Click Button</span>
+                    <br><br>
+                    <iframe src="http://www.swing2app.co.kr/swapi/share_page?app_id=44f231e0-1cba-4f22-a016-cf20135f3f6a&share_url=FunGame13%3A%2F%2F%3F" width="280" height="200" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"  style="overflow: hidden" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Coming Soon Modal -->
 
 
     <!-- START: Scripts -->
 
+    <!-- Javascript file -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="../../assets/js/data-contact-footer.js"></script>
     <!-- Object Fit Polyfill -->
     <script src="../../assets/vendor/object-fit-images/dist/ofi.min.js"></script>
     <!-- GSAP -->
