@@ -1,13 +1,13 @@
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
-  apiKey: "AIzaSyCSdoYwAd5IHNPXO1a5OCSiYWpORLUzyPI",
-  authDomain: "fungamesid.firebaseapp.com",
-  databaseURL: "https://fungamesid-default-rtdb.firebaseio.com",
-  projectId: "fungamesid",
-  storageBucket: "fungamesid.appspot.com",
-  messagingSenderId: "288362351127",
-  appId: "1:288362351127:web:1def18b6d7e9695d982a52",
-  measurementId: "G-HGSY5WTSGZ",
+  apiKey: "AIzaSyBQo5Ru_TWMwpuDcm9g3wst9JlbNw78Dcg",
+  authDomain: "fungames-report-app.firebaseapp.com",
+  databaseURL: "https://fungames-report-app-default-rtdb.firebaseio.com",
+  projectId: "fungames-report-app",
+  storageBucket: "fungames-report-app.appspot.com",
+  messagingSenderId: "299705488127",
+  appId: "1:299705488127:web:9847de1f0aab487a13f2ca",
+  measurementId: "G-969QJJ8ER2",
 };
 firebase.initializeApp(config);
 

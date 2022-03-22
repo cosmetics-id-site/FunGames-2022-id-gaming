@@ -1,19 +1,19 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCJNDQIUDFQCKRO8ANsNBWXT8E96rFhlCk",
-  authDomain: "fungames-id.firebaseapp.com",
-  databaseURL: "https://fungames-id-default-rtdb.firebaseio.com",
-  projectId: "fungames-id",
-  storageBucket: "fungames-id.appspot.com",
-  messagingSenderId: "366901940298",
-  appId: "1:366901940298:web:c0e97390c366f59a3916b3",
-  measurementId: "G-6Y8BF9HFZ4"
+  apiKey: "AIzaSyCxvi0GS281tQDpmH0krCPtQLTlH-osugc",
+  authDomain: "fungamesid-view-app.firebaseapp.com",
+  databaseURL: "https://fungamesid-view-app-default-rtdb.firebaseio.com",
+  projectId: "fungamesid-view-app",
+  storageBucket: "fungamesid-view-app.appspot.com",
+  messagingSenderId: "1072146287569",
+  appId: "1:1072146287569:web:2e8ee65f0b19d00037eef0",
+  measurementId: "G-TWE8QVJSWN"
      };
      firebase.initializeApp(firebaseConfig);
      
      const hitCounter = document.getElementById("hit-counter");
      hitCounter.style.display = "none";
      
-     const db = firebase.database().ref("View Game 2048");
+     const db = firebase.database().ref("View Game Rider,io");
      db.on("value", (snapshot) => {
        hitCounter.textContent = snapshot.val();  
      });
